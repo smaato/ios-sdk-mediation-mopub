@@ -18,7 +18,7 @@
 
 static NSString *const kSMAMoPubNativeAdapterServerAdSpaceIdKey = @"adspaceId";
 static NSString *const kSMAMoPubNativeAdapterLocalCreativeIdKey = @"smaato_ubid";
-static NSString *const kSMAMoPubNativeAdapterVersion = @"5.17.0.0";
+static NSString *const kSMAMoPubNativeAdapterVersion = @"5.16.1.0";
 
 typedef void (^SMASMAMoPubMediatedNativeAdDeferredCallback)(MPNativeAd *mopudAd, id<MPNativeAdAdapter> smaatoAdapter);
 

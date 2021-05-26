@@ -16,7 +16,7 @@
 
 static NSString *const kSMAMoPubBannerAdapterServerAdSpaceIdKey = @"adspaceId";
 static NSString *const kSMAMoPubBannerAdapterLocalCreativeIdKey = @"smaato_ubid";
-static NSString *const kSMAMoPubBannerAdapterVersion = @"5.17.0.0";
+static NSString *const kSMAMoPubBannerAdapterVersion = @"5.16.1.0";
 
 @interface SMAMoPubSmaatoBannerAdapter () <SMABannerViewDelegate>
 @property (nonatomic) SMABannerView *bannerView;

@@ -16,7 +16,7 @@
 
 static NSString *const kSMAMoPubInterstitialAdapterServerAdSpaceIdKey = @"adspaceId";
 static NSString *const kSMAMoPubInterstitialAdapterLocalCreativeIdKey = @"smaato_ubid";
-static NSString *const kSMAMoPubInterstitialAdapterVersion = @"5.17.0.0";
+static NSString *const kSMAMoPubInterstitialAdapterVersion = @"5.16.1.0";
 
 @interface SMAMoPubSmaatoInterstitialAdapter () <SMAInterstitialDelegate>
 @property (nonatomic) SMAInterstitial *interstitial;
