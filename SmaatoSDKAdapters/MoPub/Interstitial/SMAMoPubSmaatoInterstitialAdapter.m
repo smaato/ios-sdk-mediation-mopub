@@ -16,7 +16,7 @@
 
 static NSString *const kSMAMoPubInterstitialAdapterServerAdSpaceIdKey = @"adspaceId";
 static NSString *const kSMAMoPubInterstitialAdapterLocalCreativeIdKey = @"smaato_ubid";
-static NSString *const kSMAMoPubInterstitialAdapterVersion = @"5.17.0.0";
+static NSString *const kSMAMoPubInterstitialAdapterVersion = @"5.18.0.0";
 
 @interface SMAMoPubSmaatoInterstitialAdapter () <SMAInterstitialDelegate>
 @property (nonatomic) SMAInterstitial *interstitial;
@@ -194,9 +194,9 @@ static NSString *const kSMAMoPubInterstitialAdapterVersion = @"5.17.0.0";
         [self.delegate fullscreenAdAdapterAdDidDisappear:self];
     }
 
-    //    if ([self.delegate respondsToSelector:@selector(fullscreenAdAdapterAdDidDismiss:)]) {
-    //        [self.delegate fullscreenAdAdapterAdDidDismiss:self];
-    //    }
+    if ([self.delegate respondsToSelector:@selector(fullscreenAdAdapterAdDidDismiss:)]) {
+        [self.delegate fullscreenAdAdapterAdDidDismiss:self];
+    }
 }
 
 - (void)interstitialDidClick:(SMAInterstitial *)interstitial

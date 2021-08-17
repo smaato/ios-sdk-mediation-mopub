@@ -24,7 +24,7 @@
 {
     MPNativeAdRendererConfiguration *config = [[MPNativeAdRendererConfiguration alloc] init];
     config.rendererClass = [SMAMoPubSmaatoNativeAdRenderer class];
-    config.supportedCustomEvents = @[ [SMAMoPubSmaatoNativeAdapter class] ];
+    config.supportedCustomEvents = @[ NSStringFromClass([SMAMoPubSmaatoNativeAdapter class]) ];
     config.rendererSettings = rendererSettings;
     return config;
 }

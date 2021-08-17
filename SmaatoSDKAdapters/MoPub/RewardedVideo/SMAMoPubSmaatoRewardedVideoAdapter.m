@@ -16,7 +16,7 @@
 
 static NSString *const kSMAMoPubVideoRewardedAdapterServerAdSpaceIdKey = @"adspaceId";
 static NSString *const kSMAMoPubVideoRewardedAdapterLocalCreativeIdKey = @"smaato_ubid";
-static NSString *const kSMAMoPubVideoRewardedVideoAdapterVersion = @"5.17.0.0";
+static NSString *const kSMAMoPubVideoRewardedVideoAdapterVersion = @"5.18.0.0";
 
 @interface SMAMoPubSmaatoRewardedVideoAdapter () <SMARewardedInterstitialDelegate>
 @property (nonatomic) SMARewardedInterstitial *rewardedAd;
@@ -203,9 +203,9 @@ static NSString *const kSMAMoPubVideoRewardedVideoAdapterVersion = @"5.17.0.0";
         [self.delegate fullscreenAdAdapterAdDidDisappear:self];
     }
 
-    //    if ([self.delegate respondsToSelector:@selector(fullscreenAdAdapterAdDidDismiss:)]) {
-    //        [self.delegate fullscreenAdAdapterAdDidDismiss:self];
-    //    }
+    if ([self.delegate respondsToSelector:@selector(fullscreenAdAdapterAdDidDismiss:)]) {
+        [self.delegate fullscreenAdAdapterAdDidDismiss:self];
+    }
 }
 
 - (void)rewardedInterstitialDidStart:(SMARewardedInterstitial *)rewardedInterstitial
